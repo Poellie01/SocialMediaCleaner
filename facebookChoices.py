@@ -49,8 +49,5 @@ def downloadFacebookData():
     time.sleep(2)
     driver.get("https://www.facebook.com/dyi/?referrer=yfi_settings")
     # time.sleep(5)
-    source = driver.page_source()
-    sourceSplit = source(filter("Bestand maken"))
-    print(sourceSplit)
     clear_button = driver.find_element_by_link_text("Bestand maken")
     clear_button.click()
